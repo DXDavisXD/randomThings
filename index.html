@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing / Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="slider">
+        <h1 style="text-align: center; color: beige;">Image Slider</h1>
+        <div class="slides">
+            <img src="Images/4666577.jpg" alt="Image1">
+            <img src="Images/467765.jpg" alt="Image2">
+            <img src="Images/47474774.jpg" alt="Image3">
+            <img src="Images/6336663.jpg"
+                alt="Image4">
+            <img src="Images/7757788.jpg" alt="Image5">
+        </div>
+        <button class="prev" onclick="prev()">◀</button>
+        <button class="next" onclick="next()">▶</button>
+    </div>
+
+    <div id="other">
+        <div id="window-alert" style="color: aliceblue;">
+            <h1>For Window Alert and Prompt</h1>
+            <button onclick="openPrompt()" style="color: aliceblue; padding-left: 15px; padding-right: 15px; padding-top: 10px; padding-bottom: 10px;">Press to open a Prompt</button><br><br>
+            <label id="show-prompt" style="visibility: hidden;">asd</label>
+        </div>
+
+        <div id="dom-Elemets">
+            <h1 id="dom-h1" style="color:blueviolet;">DOM Elemlents</h1>
+            <h3 style="font-style: italic; font-size: 12px; font-weight: bold;">*Change Element's Color</h4>
+                <span id="color">
+                    <label for="buttonColor">Choose Button Color: </label>
+                    <input type="color" id="buttonColor"><br><br>
+                    <label for="headerColor">Choose Header Color: </label>
+                    <input type="color" id="headerColor">
+                </span><br><br>
+        </div>
+
+        <div id="move-button">
+            <h1 style="font-family: cursive;">Event Listener</h1>
+            <input type="checkbox" id="moveEnable">
+            <label for="moveEnable" style="font-style: italic; font-weight: bold;">Click to move the Button using Arrow Keys</label><br><br>
+            <button id="movableButton">😀</button>
+        </div>
+
+        <div id="cookieContainer">
+            <h1 style="color: rgb(4, 231, 4);">Create Cookie</h1>
+            <span id="cookieSpan">
+                <input id="key" placeholder="Enter the KEY" style="border-color: hsl(84, 100%, 42%);">
+                <label style="font-weight: bold; font-size: 15px;"> : </label>
+                <input id="value" placeholder="Enter the VALUE" style="border-color: hsl(84, 100%, 42%);"><br><br>
+            </span>
+            <button id="submit" onclick="submitCookie()" style="background-color: hsl(84, 77%, 66%); color: hsl(150, 72%, 17%);">Create</button>
+            <h1 style="color: rgb(214, 214, 5);">Show Cookie</h1>
+            <button id="sCookie" onclick="showCookie()" style="background-color: hsla(49, 66%, 64%, 0.87); color: hsl(120, 74%, 21%);">Show Cookie</button>
+            <h1 style="color: rgb(221, 16, 16);">Delete Cookie</h1>
+            <input id="dCookie" placeholder="Enter the KEY" style="border-color: hsl(0, 47%, 73%);">
+            <button id="dCookieButton" onclick="deleteCookie()" style="background-color: hsl(0, 47%, 73%); color: rgb(255, 0, 0);">Delete</button>
+        </div>
+
+        <div id="pokemon">
+            <h1>Pokemon Fetcher</h1>
+            <input id="input" placeholder="Pokemon Name" type="text"><br><br>
+            <img src="Images/il_1140xN.2827971887_67vq-removebg-preview.png" onclick="fetchData()" style="overflow: hidden; width: 30px; top: 10px; cursor: pointer;"><br>
+            <span>
+                <img class="resultImg" src="" id="pokemonSprite">
+            </span>
+        </div>
+    </div>
+
+    <div id="clock">
+        <label id="time">00:0000</label><br>
+        <label id="day">someDay</label>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

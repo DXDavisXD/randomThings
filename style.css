@@ -1,0 +1,200 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    height: 100%;
+    /*background: hsl(200, 6%, 10%);*/
+    background-image: url(Images/hrvoje_photography-4TVbbaNAw9Q-unsplash.jpg);
+    border-image-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#other{
+    max-width: 50%;
+    border-width: 3px;
+}
+
+#cookieContainer{
+    padding-top: 0.5px;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(194, 194, 194, 0.479), rgba(9, 166, 187, 0.671));
+    padding-bottom: 25px;
+    border-bottom: none;
+}
+#cookieContainer input{
+    border-style:dashed;
+    text-align: center;
+    font-size: 15px;
+    background-color: hsl(180, 10%, 83%);
+    border-radius: 5px;
+    padding: 4px;
+    font-weight: bold;
+}
+#cookieContainer button{
+    border: none;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#cookieSpan input{
+    color: hsl(135, 97%, 26%);
+}
+#dCookie{
+    color: hsl(0, 59%, 41%);
+}
+
+#clock{
+    position: fixed;
+    margin: auto;
+    overflow: hidden;
+    left: 90%;
+    top: 2%;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    color: blanchedalmond;
+    background: rgba(255, 255, 255, 0.075);
+    padding: 10px;
+    border-radius: 10px;
+}
+#day{
+    font-size: 1.5rem;
+}
+
+.slider{
+    position: fixed;
+    margin: auto;
+    height: 900px;
+    overflow: hidden;
+    left: 56.18%;
+    top: 0%;
+}
+.slides{
+    width: 600px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.slider img{
+    position: fixed;
+    height: 80vh;
+    display: none;
+    object-fit: cover;
+}
+img.displaySlide{
+    display: block;
+    border-radius: 20px;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position: fixed;
+    top: 90%;
+    font-size: 2rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+.prev{
+    left: 53.5%;
+}
+.next{
+    right: 10%;
+}
+@keyframes fade {
+    from{opacity: 0}
+    to{opacity: 2}
+}
+
+#window-alert{
+    text-align: center;
+    background: linear-gradient(to bottom, hsla(218, 97%, 12%, 0.671), rgba(189, 226, 120, 0.671));
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: auto;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    font-family: 'calibri';
+    font-weight: bolder;
+}
+#window-alert button{
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(13, 165, 211);
+    padding: 5px;
+    cursor: pointer;
+    border-color: hsl(223, 85%, 16%);
+}
+
+#dom-Elemets{
+    text-align: center;
+    padding-top: 0.5px;
+    background: linear-gradient(to bottom, rgb(189, 226, 120, 0.671), rgb(194, 194, 194, 0.671));
+    border-top-style: dashed;
+    border-color: rgb(255, 145, 0);
+}
+#color{
+    font-size: large;
+    font-weight: lighter;
+}
+#color label{
+    font-size: 15px;
+    font-weight: bold;
+    color: azure;
+}
+
+#move-button{
+    text-align: center;
+    padding-top: 0.5px;
+    margin: auto;
+    height: 200px;
+    background-color: rgb(194, 194, 194, 0.671);
+    color: white;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+}
+#movableButton{
+    position: relative;
+    cursor: not-allowed;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+#movableButton:hover{
+    background-color: hsl(0, 100%, 50%);
+}
+
+
+#pokemon{
+    text-align: center;
+    padding-top: 0.5px;
+    padding-bottom: 20px;
+    background: linear-gradient(to top, hsla(218, 97%, 12%, 0.671), rgba(9, 166, 187, 0.671));
+    border-top-style: dotted;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 250px;
+}
+#pokemon input{
+    border-style:dashed;
+    text-align: center;
+    font-size: 15px;
+    background-color: hsl(180, 10%, 83%);
+    border-radius: 5px;
+    padding: 4px;
+    font-weight: bold;
+    color: rgb(155, 155, 4);
+}
+.resultImg{
+    position: relative;
+    left: 45%;
+}
